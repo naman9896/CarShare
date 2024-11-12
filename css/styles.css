@@ -165,8 +165,15 @@ h1 {
 }
 
 .visuals h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
+}
+
+.visuals h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 .visual-card {
@@ -181,7 +188,7 @@ h1 {
 .visual-card img {
   width: 600px;
   height: 360px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .visuals .description {
