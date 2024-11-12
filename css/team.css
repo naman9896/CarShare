@@ -6,10 +6,84 @@
 
 body {
   font-family: Arial, sans-serif;
+  height: 100vh;
 }
 
 /* Menu  */
 
 .visuals h1 {
   margin-top: 5%;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  transition-duration: 200ms;
+}
+
+.team-cards h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10%;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.cards-container {
+  margin-top: 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+.card {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  border-radius: 20px;
+  padding: 160px 20px 20px 20px;
+  position: relative;
+  transition-duration: 200ms;
+  background-color: white;
+}
+
+.card .content p {
+  color: #888888;
+  padding-top: 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.member-image {
+  transition-duration: 500ms;
+  position: absolute;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  left: 10px;
+  top: -50px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px #999999;
+}
+
+.card h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+}
+
+.card:hover .member-image {
+  transform: scale(1.2) translateX(-70px) translateY(60px);
+  width: 100px;
+  z-index: 0;
+  height: 100px;
+  border-radius: 50px;
+}
+.card:hover {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.card:hover .content {
+  z-index: 6;
 }
