@@ -57,6 +57,30 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
+.sidebar-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.social-link a {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.social-link .fa-github {
+  font-size: 2rem;
+}
+
 .open-nav {
   transform: translateX(0%);
 }
